@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf258cfbf094d046a8a785a2e6c79a7, type: 3}
+  m_Name: GermManager
+  m_EditorClassIdentifier: 
+  GermTypes:
+  - Name: Germ
+    Prefab: {fileID: 7678911119081995992, guid: fefa9acf63da47848a2b4255359a347a, type: 3}
+    Speed: 5
+    maxSpeed: 10
+    turnSpeed: 6
+    ViewRadius: 35
+    defaultMaxHealth: 500
+    defaultMaxHunger: 100
+    ChanceOfMutation: 30
+    NeededSpawnTime: 3
+    searchDelay: 0
+    attackRange: 5.2
+    wanderStrength: 5
+    maxSpawnRate: 15
+    hungerRate: 5
+    starvingDamageRate: 15
+    recallStopDistance: 5
+    recallSpeedMultiplier: 1.5
+    executionOptionHealth: 0
+    Tag: 0
+  germTypeNames: []
