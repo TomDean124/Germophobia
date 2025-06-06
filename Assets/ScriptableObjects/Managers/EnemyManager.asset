@@ -25,7 +25,7 @@ MonoBehaviour:
     ExplodesOnDeath: 0
     CanBeAttacked: 0
     NeededSpawnTime: 1
-    maxSpawnRate: 1
+    maxSpawnRate: 20
     spawningOrder: 1
     germAttackRange: 0
     playerAttackRange: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     defaultMaxHealth: 100
     ExplodesOnDeath: 1
     NeededSpawnTime: 0
-    maxSpawnRate: 222
+    maxSpawnRate: 15
     spawnRadius: 10
     importance: 1
     deathData: {fileID: 11400000, guid: b2411e51dd39087419f9f068c0ea57b4, type: 2}

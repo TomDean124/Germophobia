@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Replication:
   - elementName: 'Healthy Cell '
-    healthForReplicationOption: 150
+    healthForReplicationOption: 50
     applyToType: 0

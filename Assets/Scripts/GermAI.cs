@@ -120,7 +120,7 @@ public class GermAI : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, _targetStaticEnemy.transform.position, moveSpeed * Time.deltaTime);
         
         if (debugMode && _previousState != _states.Chasing)
-        {
+        { 
             Debug.Log($"[GermAI {gameObject.name}] Chasing target {_targetStaticEnemy.name} at distance {Vector2.Distance(transform.position, _targetStaticEnemy.transform.position):F2}");
         }
     }
@@ -235,7 +235,7 @@ public class GermAI : MonoBehaviour
             handler.TryUseAttack(_targetStaticEnemy, "Enemy");
         }
         else
-        {
+        { 
             if (debugMode) Debug.LogWarning($"[GermAI {gameObject.name}] No AttackHandler component found!");
         }
     }

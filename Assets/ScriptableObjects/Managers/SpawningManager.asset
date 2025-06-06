@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SpawningManager
   m_EditorClassIdentifier: 
   maxGerms: 10
-  maxEnemies: 199
+  maxEnemies: 20
   germSpawningInterval: 0
   macrophageSpawningInterval: 1.12
   nuetrophilSpawningInterval: 0

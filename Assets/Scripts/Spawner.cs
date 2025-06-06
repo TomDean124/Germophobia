@@ -89,6 +89,7 @@ public class Spawner : MonoBehaviour
             {
                 Vector2 spawnPos = Player.transform.position;
                 GameObject germ = Instantiate(germManager.GermTypes[i].Prefab, spawnPos, Quaternion.identity);
+                
                 var germData = germManager.GermTypes[i];
                 germ.tag = germData.Tag.ToString();
                 germ.GetComponent<Boid>().SetupBoids(germData.Speed, germData.maxSpeed);

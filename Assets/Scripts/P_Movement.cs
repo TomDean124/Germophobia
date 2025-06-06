@@ -25,9 +25,12 @@ public class P_Movement : MonoBehaviour
     private bool MouseStopped;
     private float timer;
     private bool PlayerIsAtMousePosition;
+    private bool isMovementSoundPlaying;
 
     // Camera
     private Camera cam;
+
+
 
 
     void Start()
@@ -54,6 +57,12 @@ public class P_Movement : MonoBehaviour
     // Moving the player (Germ)
     public void Move(Vector2 targetPos, float acceleration)
     {
+        if(speed > 0 && !isMovementSoundPlaying)
+        {
+            SoundManager.Instance.PlayDefinedAudio(soundType.Movement, 1f, true);
+            isMovementSoundPlaying = true;
+        }
+
         // Calculate the distance between the player and the target position
         float distance = Vector2.Distance(Player.transform.position, targetPos);
 
